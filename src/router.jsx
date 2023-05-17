@@ -10,10 +10,11 @@ function Routing() {
   return (
     <Routes>
       <Route path="/" element={<Dashboard />}>
-        <Route path="/" element={<DashbordCards />} />
-        <Route path="/status" element={<Status />} />
+        <Route path="/dashbord" element={<DashbordCards />} />
+        <Route path="/" element={<Status />} />
         <Route path="/message" element={<Message />} />
         <Route path="/calender" element={<Calendar />} />
+       
       </Route>
     </Routes>
   );

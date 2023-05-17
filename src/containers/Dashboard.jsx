@@ -5,11 +5,13 @@ import { Sidebar } from "../components/Sidebar";
 
 export const Dashboard = () => {
   return (
-    <div className="maincontents h-full bg-stone-300 shadow-xl border rounded-xl flex w-full">
+    <div className="maincontents h-full bg-slate-400 shadow-xl border rounded-xl flex w-full">
       <Sidebar />
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full p-4">
         <Header />
-        <Outlet />
+        <div className="p-4 w-full h-full bg-slate-300 rounded-2xl">
+          <Outlet />
+        </div>
       </div>
     </div>
   );

@@ -22,8 +22,8 @@ export const Sidebar = () => {
       <UserProfile />
       <div>
         <div className="total-list text-xl font-semibold text-slate-100 flex flex-col mt-10 [&>*]:py-5 [&>*]:pl-10 ">
-          {getSideBarItem('DashBoard', home, '/')}
-          {getSideBarItem('Status', status, '/status')}
+          {getSideBarItem('DashBoard', home, '/dashbord')}
+          {getSideBarItem('Status', status, '/')}
           {getSideBarItem('Message', message, '/message')}
           {getSideBarItem('Calender', calender, '/calender')}
           {getSideBarItem('News', news, '/status')}
